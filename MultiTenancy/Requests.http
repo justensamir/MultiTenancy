@@ -1,0 +1,19 @@
+@host = https://localhost:7029
+
+GET {{host}}/api/products
+tenant: microsoft
+###
+
+GET {{host}}/api/products/1
+tenant: arpuplus
+
+###
+POST {{host}}/api/products
+Content-Type: application/json
+tenant: microsoft
+
+{
+  "name": "Visual Studio",
+  "description": "IDE",
+  "rate": 5
+}

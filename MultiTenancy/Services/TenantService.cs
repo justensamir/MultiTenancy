@@ -48,7 +48,7 @@ namespace MultiTenancy.Services
 
         private void SetCurrentTenant(string tenantId)
         {
-            _currentTenant = _tenantSettings.Tenants.FirstOrDefault(t => t.TId == tenantId);
+            _currentTenant = _tenantSettings.Tenants.FirstOrDefault(t => t.TId.ToLower() == tenantId.ToLower());
 
             if (_currentTenant is null)
             {
