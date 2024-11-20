@@ -1,6 +1,4 @@
-﻿using MultiTenancy.Contracts;
-
-namespace MultiTenancy.Models
+﻿namespace MultiTenancy.Models
 {
     public class Product : IMustHaveTenant
     {
